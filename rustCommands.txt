@@ -1,0 +1,60 @@
+Rust Installation betreffende Sache
+
+// cSpell:ignore rustup, rustc
+
+rustup - Installiert dir Rust und lässt dich zur Beta, stable Versionen und der nightly Version wechseln
+
+rust update - Rust aktuell halten
+
+rustc - Rust compiler Aufruf
+
+rustup docs --book - Ruft das Rust Book auf (bei Installationen mit rustup i guess)
+
+rust up doc - Dokumentation von Rust nur offline auf dem Terminal
+
+rustup self uninstall - für die Deinstallation von Rust
+
+Rustcode compilieren:
+
+cargo new "ProjektName"
+
+cargo add "Dependency" - eine Möglichkeit, neben der Einfügung in der TOML Datei,
+                         Abhängigkeiten sog. crates hinzuzufügen
+
+cargo build - compiliert Projekt und ladet crates
+
+cargo run - compiliert Projekt etc. und führt dieses aus
+
+cargo test - Projekt Testen
+
+cargo doc --open - öffnet Documentation von crates gesammelt auf website
+
+cargo fmt - formatiert den Rust code automatisch
+
+
+Rust Syntax:
+
+let x = number \\ initialisieren einer Variable
+let x: u32 = number \\ initialisieren einer unsigned 32 Bit Zahl
+let x: i32 = number \\ initialisieren einer signed 32 Bit Zahl
+                         (standard, wenn nicht angegeben)
+let x: u64 = number \\ initialisieren einer unsigned 64 Bit Zahl
+let x: i64 = number \\ initialisieren einer signed 64 Bit Zahl
+
+
+x match = y {
+    this => that,
+    that => this,
+};
+
+Bei Result Typ:
+
+x match y {
+    OK(x) => y,
+    Err(y) => y \\oder Err(_) => continue;
+};
+
+Match bei Compare Funktion:
+match Vergleich.cmp(&Vergleich){
+    \\wie oben mit => 
+}
