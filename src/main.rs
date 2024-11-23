@@ -7,7 +7,7 @@ fn main() {
 
     let number_to_guess = rand::thread_rng().gen_range(1..=100);
 
-    println!("Die Geheimzahl ist: {number_to_guess}");
+//    println!("Die Geheimzahl ist: {number_to_guess}");
 
     loop {
         println!("Gib eine Zahl ein: ");
